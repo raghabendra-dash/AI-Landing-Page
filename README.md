@@ -2,7 +2,7 @@
   A responsive, interactive landing page for <strong>NexaBlock.ai</strong>, a conceptual AI-powered blockchain platform. This project serves as a comprehensive demonstration of modern frontend development practices, featuring a clean component-based architecture, a data-driven interactive dashboard, and a sleek, futuristic user interface.
 
 ---
-### 🔗 Live Demo: 
+### 🔗 Live Demo: https://ai-landing-page-two-pi.vercel.app
 ---
 
 ### 📖 Table of Contents
