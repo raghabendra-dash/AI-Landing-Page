@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group -ml-7">
             <div className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
               <img src="/N-logo.jpg" alt="NexaBlock.ai Logo" className="w-10 h-10" />
             </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4 -mr-5">
              <Button
               variant="outline"
               className="glass-card border-primary/30 hover:border-primary text-foreground"
