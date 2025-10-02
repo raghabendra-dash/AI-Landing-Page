@@ -1,11 +1,4 @@
 ## NexaBlock.ai - AI-Blockchain Landing Page
-
-<!-- <p align="center">
-  <a href="#">
-    <img src="https://lovable.dev/opengraph-image-p98pqg.png" alt="NexaBlock.ai Banner" width="800">
-  </a>
-</p> -->
-
   A responsive, interactive landing page for <strong>NexaBlock.ai</strong>, a conceptual AI-powered blockchain platform. This project serves as a comprehensive demonstration of modern frontend development practices, featuring a clean component-based architecture, a data-driven interactive dashboard, and a sleek, futuristic user interface.
 
 ---
@@ -16,7 +9,8 @@
 
 - [📍 About The Project](#-about-the-project)
 - [✨ Key Features](#-key-features)
-- [🛠️ Built With](#️-built-with)
+- [📌 Project Purpose](#-project-purpose)
+- [💼 Built With](#️-built-with)
 - [🚀 Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -52,6 +46,19 @@ The goal was to create a visually striking and immersive experience that not onl
 
 ---
 
+### 📌 Project Purpose
+
+The NexaBlock.ai landing page is more than a UI mockup.
+It serves as:
+
+- A design case study in futuristic blockchain branding.
+- A technical demo for React, TypeScript, Tailwind, and 3D integration.
+- A template that can be adapted into real-world blockchain or AI SaaS projects.
+
+By combining AI concepts with blockchain visuals, it aims to inspire developers, product teams, and designers working on next-gen web platforms.
+
+---
+
 ### 💼 Built With
 
 This project leverages a curated stack of modern frontend technologies and libraries.
@@ -76,7 +83,7 @@ This project leverages a curated stack of modern frontend technologies and libra
 
 ---
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 Follow these instructions to set up the project locally for development and testing.
 
@@ -113,7 +120,7 @@ Once completed, the application will be running in development mode. Open your b
 
 ---
 
-## 🎨 Design System
+### 🎨 Design System
 
 The project uses a consistent design system defined in `tailwind.config.ts` and `src/index.css`.
 
@@ -123,9 +130,7 @@ The project uses a consistent design system defined in `tailwind.config.ts` and 
 -   **Body Text:** `Inter`
 -   **Code/Mono:** `JetBrains Mono`
 
----
-
-## 📜 Available Scripts
+### 📜 Available Scripts
 
 In the project directory, you can run the following commands:
 
@@ -143,7 +148,7 @@ In the project directory, you can run the following commands:
 
 ---
 
-## 🚢 Deployment
+### 🚢 Deployment
 
 To deploy this project, you first need to create a production build:
 
