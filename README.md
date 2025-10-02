@@ -55,7 +55,7 @@ It serves as:
 - A technical demo for React, TypeScript, Tailwind, and 3D integration.
 - A template that can be adapted into real-world blockchain or AI SaaS projects.
 
-By combining AI concepts with blockchain visuals, it aims to inspire developers, product teams, and designers working on next-gen web platforms.
+By combining AI concepts with blockchain visuals, it aims to inspire developers, product teams and designers working on next-gen web platforms.
 
 ---
 
