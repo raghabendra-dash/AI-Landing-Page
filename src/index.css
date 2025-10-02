@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Deep Space Background */
+    --background: 240 48% 9%;
+    --foreground: 210 40% 98%;
+
+    /* Glassmorphic Cards */
+    --card: 240 38% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 38% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Indigo Primary */
+    --primary: 239 84% 67%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Violet Secondary */
+    --secondary: 262 83% 62%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Neon Green Accent */
+    --accent: 158 100% 51%;
+    --accent-foreground: 240 48% 9%;
+
+    --muted: 240 38% 18%;
+    --muted-foreground: 215 20% 85%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 38% 18%;
+    --input: 240 38% 18%;
+    --ring: 239 84% 67%;
+
+    --radius: 0.75rem;
+    
+    /* Custom Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(273, 70%, 55%), hsl(280, 70%, 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(238, 75%, 70%), hsl(271, 55%, 65%));
+    --gradient-accent: linear-gradient(90deg, hsl(158, 100%, 51%), hsl(175, 100%, 45%));
+    
+    /* Glassmorphism */
+    --glass-bg: hsla(240, 38%, 12%, 0.4);
+    --glass-border: hsla(210, 40%, 98%, 0.1);
+    
+    /* Shadows */
+    --shadow-glow-primary: 0 0 40px hsla(239, 84%, 67%, 0.3);
+    --shadow-glow-accent: 0 0 30px hsla(158, 100%, 51%, 0.4);
+    --shadow-elevated: 0 20px 60px hsla(240, 48%, 9%, 0.6);
+    
+    /* Animation */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode uses same tokens */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+  }
+  
+  .glass-card-light {
+    background: var(--glass-bg);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .glow-primary {
+    box-shadow: var(--shadow-glow-primary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--shadow-glow-accent);
+  }
+  
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .gradient-text-accent {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
