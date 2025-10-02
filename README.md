@@ -1,4 +1,4 @@
-# 🔗NexaBlock.ai - AI-Blockchain Landing Page
+## NexaBlock.ai - AI-Blockchain Landing Page
 
 <!-- <p align="center">
   <a href="#">
@@ -6,13 +6,13 @@
   </a>
 </p> -->
 
-<p align="center">
   A responsive, interactive landing page for <strong>NexaBlock.ai</strong>, a conceptual AI-powered blockchain platform. This project serves as a comprehensive demonstration of modern frontend development practices, featuring a clean component-based architecture, a data-driven interactive dashboard, and a sleek, futuristic user interface.
-</p>
 
 ---
+### 🔗 Live Demo: 
+---
 
-## 📖 Table of Contents
+### 📖 Table of Contents
 
 - [📍 About The Project](#-about-the-project)
 - [✨ Key Features](#-key-features)
@@ -28,7 +28,7 @@
 
 ---
 
-## 📍 About The Project
+### 📍 About The Project
 
 NexaBlock.ai is a conceptual next-generation blockchain platform that integrates Artificial Intelligence to optimize performance, security, and efficiency. This landing page was built to be the primary marketing and informational entry point for the platform.
 
@@ -36,7 +36,7 @@ The goal was to create a visually striking and immersive experience that not onl
 
 ---
 
-## ✨ Key Features
+### ✨ Key Features
 
 -   **Interactive Real-Time Dashboard:** A core feature of the page is a dashboard that simulates live blockchain statistics. It uses React's `useState` and `useEffect` hooks to periodically update metrics like Transactions Per Second (TPS), Transaction Finality, Block Height, and the number of Active Validators, giving the impression of a live, active network.
 
@@ -52,11 +52,11 @@ The goal was to create a visually striking and immersive experience that not onl
 
 ---
 
-## 🛠️ Built With
+### 💼 Built With
 
 This project leverages a curated stack of modern frontend technologies and libraries.
 
-### Core Stack
+### Core Stack:
 | Technology | Description |
 | :--- | :--- |
 | **[React 18](https://reactjs.org/)** | A JavaScript library for building user interfaces. |
@@ -64,7 +64,7 @@ This project leverages a curated stack of modern frontend technologies and libra
 | **[Vite](https://vitejs.dev/)** | A next-generation frontend tooling that provides a faster and leaner development experience. |
 | **[Tailwind CSS](https://tailwindcss.com/)** | A utility-first CSS framework for rapid UI development. |
 
-### UI & Graphics
+### UI & Graphics:
 | Technology | Description |
 | :--- | :--- |
 | **[shadcn/ui](https://ui.shadcn.com/)** | Re-usable components built using Radix UI and Tailwind CSS. |
@@ -116,16 +116,6 @@ Once completed, the application will be running in development mode. Open your b
 ## 🎨 Design System
 
 The project uses a consistent design system defined in `tailwind.config.ts` and `src/index.css`.
-
-### Color Palette
-
-| Role       | Hex       | Tailwind Class |
-| :--------- | :-------- | :------------- |
-| Primary    | `#6366F1` | `primary`      |
-| Secondary  | `#8B5CF6` | `secondary`    |
-| Accent     | `#06FFA5` | `accent`       |
-| Background | `#0F0F23` | `background`   |
-| Foreground | `#F8FAFC` | `foreground`   |
 
 ### Typography
 
