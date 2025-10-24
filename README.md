@@ -46,6 +46,13 @@ The goal was to create a visually striking and immersive experience that not onl
 
 ---
 
+### 📸 Screenshots
+
+### 🏠 Landing Page
+![Landing Page](public/home.png)  
+
+---
+
 ### 📌 Project Purpose
 
 The NexaBlock.ai landing page is more than a UI mockup.
