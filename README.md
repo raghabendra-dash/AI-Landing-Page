@@ -45,11 +45,9 @@ The goal was to create a visually striking and immersive experience that not onl
 -   **Developer-Friendly Tooling:** The project is set up with Vite for a lightning-fast development server and build process. TypeScript is used throughout to ensure type safety and improve the developer experience.
 
 ---
-
 ### 📸 Screenshots
 ### 🏠 Landing Page
-![Landing Page](public/home.png)  
-
+![Home Page](public/home.png)  
 ---
 
 ### 📌 Project Purpose
