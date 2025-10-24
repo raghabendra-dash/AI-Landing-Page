@@ -47,7 +47,6 @@ The goal was to create a visually striking and immersive experience that not onl
 ---
 
 ### 📸 Screenshots
-
 ### 🏠 Landing Page
 ![Landing Page](public/home.png)  
 
