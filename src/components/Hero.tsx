@@ -1,10 +1,59 @@
 import { ArrowRight, Zap, Lock, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroRobot from "@/assets/hero-robot.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 const Hero = () => {
+  const container = useRef(null);
+
+  useGSAP(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+
+    tl.from(".badge", {
+      opacity: 0,
+      y: -20,
+      duration: 0.8,
+    });
+
+    tl.from(".main-heading", {
+      opacity: 0,
+      y: 20,
+      duration: 1,
+    }, "-=0.5");
+
+    tl.from(".subheading", {
+      opacity: 0,
+      y: 20,
+      duration: 1,
+    }, "-=0.7");
+
+    tl.from(".stat", {
+      opacity: 0,
+      y: 20,
+      duration: 0.8,
+      stagger: 0.2,
+    }, "-=0.5");
+
+    tl.from(".cta-button", {
+      opacity: 0,
+      y: 20,
+      duration: 0.8,
+      stagger: 0.2,
+    }, "-=0.5");
+
+    tl.from(".feature-pill", {
+      opacity: 0,
+      y: 20,
+      duration: 0.5,
+      stagger: 0.1,
+    }, "-=0.5");
+
+  }, { scope: container });
+
   return (
-    <section id="features" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-16">
+    <section ref={container} id="features" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-16">
       {/* Static Background Layer */}
       <div className="absolute inset-0 z-[1]">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10" />
@@ -24,15 +73,15 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 relative">
-        <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in-up">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass-card px-5 py-2 rounded-full glow-primary">
+          <div className="badge inline-flex items-center gap-2 glass-card px-5 py-2 rounded-full glow-primary">
             <Zap className="w-4 h-4 text-accent" />
             <span className="text-sm font-mono text-muted-foreground">AI-Powered Blockchain Infrastructure</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
+          <h1 className="main-heading text-4xl md:text-6xl font-heading font-bold leading-tight">
             The Future of{" "}
             <span className="text-secondary">Intelligent</span>
             <br />
@@ -40,22 +89,22 @@ const Hero = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="subheading text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
             High-performance AI-powered blockchain with lightning-fast transaction finality 
             and exceptional throughput using next-gen Proof of Stake consensus.
           </p>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-            <div className="glass-card max-w-sm p-8 rounded-2xl glow-primary hover:scale-105 transition-transform">
+            <div className="stat glass-card max-w-sm p-8 rounded-2xl glow-primary hover:scale-105 transition-transform">
               <div className="text-4xl font-bold gradient-text-accent font-mono">50,000+</div>
               <div className="text-sm text-muted-foreground mt-2 font-heading">Transactions Per Second</div>
             </div>
-            <div className="glass-card max-w-sm p-8 rounded-2xl glow-primary hover:scale-105 transition-transform">
+            <div className="stat glass-card max-w-sm p-8 rounded-2xl glow-primary hover:scale-105 transition-transform">
               <div className="text-4xl font-bold gradient-text-accent font-mono">&lt;400ms</div>
               <div className="text-sm text-muted-foreground mt-2 font-heading">Transaction Finality</div>
             </div>
-            <div className="glass-card max-w-sm p-8 rounded-2xl glow-primary hover:scale-105 transition-transform">
+            <div className="stat glass-card max-w-sm p-8 rounded-2xl glow.primary hover:scale-105 transition-transform">
               <div className="text-4xl font-bold gradient-text-accent font-mono">99.99%</div>
               <div className="text-sm text-muted-foreground mt-2 font-heading">Network Uptime</div>
             </div>
@@ -65,7 +114,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-7 justify-center pt-8">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-heading text-lg px-8 py-6 glow-primary group"
+              className="cta-button bg-primary hover:bg-primary/90 text-primary-foreground font-heading text-lg px-8 py-6 glow-primary group"
             >
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -73,7 +122,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="glass-card border-2 border-primary/50 hover:border-primary text-foreground font-heading text-lg px-8 py-6"
+              className="cta-button glass-card border-2 border-primary/50 hover:border-primary text-foreground font-heading text-lg px-8 py-6"
             >
               Learn More
             </Button>
@@ -81,23 +130,21 @@ const Hero = () => {
 
           {/* Feature Pills */}
           <div className="flex flex-wrap gap-4 justify-center pt-8">
-            <div className="flex items-center gap-2 glass-card px-4 py-2 rounded-full">
+            <div className="feature-pill flex items-center gap-2 glass-card px-4 py-2 rounded-full">
               <Lock className="w-4 h-4 text-accent" />
               <span className="text-sm">Enterprise Security</span>
             </div>
-            <div className="flex items-center gap-2 glass-card px-4 py-2 rounded-full">
+            <div className="feature-pill flex items-center gap-2 glass-card px-4 py-2 rounded-full">
               <Zap className="w-4 h-4 text-accent" />
               <span className="text-sm">Lightning Fast</span>
             </div>
-            <div className="flex items-center gap-2 glass-card px-4 py-2 rounded-full">
+            <div className="feature-pill flex items-center gap-2 glass-card px-4 py-2 rounded-full">
               <Globe className="w-4 h-4 text-accent" />
               <span className="text-sm">Global Network</span>
             </div>
           </div>
         </div>
       </div>
-
-
     </section>
   );
 };
