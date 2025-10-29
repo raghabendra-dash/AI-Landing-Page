@@ -1,5 +1,5 @@
 ## NexaBlock.ai — AI + Blockchain Landing Page
-<strong>NexaBlock.ai</strong> is an immersive landing page built for a conceptual AI-powered blockchain platform. It is designed to highlight modern frontend skills, combining a sleek **glassmorphism UI**, **smooth GSAP animations** and a **simulated real-time dashboard**. The project focuses on creating an engaging user experience that blends futuristic tech with clean, intuitive design — making it a standout showcase of frontend development.
+<strong>NexaBlock.ai</strong> is an immersive landing page built for a conceptual AI-powered blockchain platform. It is designed to highlight modern frontend skills, combining a sleek **glassmorphism UI**, **smooth GSAP animations** and a simulated **real-time dashboard**. The project focuses on creating an engaging user experience that blends futuristic tech with clean, intuitive design — making it a standout showcase of frontend development.
 
 ---
 ### 🔗 Live Demo: [View Here](https://ai-landing-page-two-pi.vercel.app)
