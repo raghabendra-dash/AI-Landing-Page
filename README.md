@@ -1,8 +1,8 @@
 ## NexaBlock.ai — AI + Blockchain Landing Page
-  A responsive, interactive landing page for <strong>NexaBlock.ai</strong>, a conceptual AI-powered blockchain platform. This project serves as a comprehensive demonstration of modern frontend development practices, featuring a clean component-based architecture, a data-driven interactive dashboard, and a sleek, futuristic user interface.
+<strong>NexaBlock.ai</strong> is a stunning and immersive landing page for a conceptual AI-driven blockchain platform. This project is more than just a website; it's a portfolio centerpiece designed to showcase the art of modern frontend development. It masterfully blends a sleek **glassmorphism** aesthetic with fluid, professional-grade animations and a simulated real-time data dashboard. The result is a compelling narrative and an engaging user experience, demonstrating how futuristic technologies can be presented in a beautiful and intuitive way.
 
 ---
-### 🔗 Live Demo: https://ai-landing-page-two-pi.vercel.app
+### 🔗 Live Demo: [View Here](https://ai-landing-page-two-pi.vercel.app)
 ---
 
 ### 📖 Table of Contents
@@ -36,7 +36,7 @@ The goal was to create a visually striking and immersive experience that not onl
 
 -   **Fully Responsive & Mobile-First Design:** Built using Tailwind CSS, the layout and all components are fully responsive, ensuring a seamless and intuitive experience across all devices, from large desktop monitors to small mobile screens.
 
--   **3D Animated Backgrounds:** Subtle, non-intrusive 3D animations created with `React Three Fiber` and `Three.js` are used in the background to add depth and a futuristic feel to the user interface without compromising performance.
+-   **3D Animated Backgrounds:** Subtle, non-intrusive 3D animations created with `GSAP` are used in the background to add depth and a futuristic feel to the user interface without compromising performance.
 
 -   **Modern "Glassmorphism" UI/UX:** The design is centered around a "glassmorphism" aesthetic, utilizing frosted glass effects, vibrant gradients, and glow effects to create a clean, high-tech look and feel.
 
@@ -82,7 +82,7 @@ This project leverages a curated stack of modern frontend technologies and libra
 | **[Radix UI](https://www.radix-ui.com/)** | A set of low-level, unstyled, accessible UI primitives. |
 | **[Lucide React](https://lucide.dev/)** | A simply beautiful and consistent icon toolkit. |
 | **[React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)**| A React renderer for Three.js. |
-| **[Three.js](https://threejs.org/)** | A cross-browser JavaScript library/API used to create and display animated 3D computer graphics in a web browser. |
+| **[GSAP](https://gsap.com/)** | A professional-grade JavaScript animation library for the modern web. |
 
 
 ---
