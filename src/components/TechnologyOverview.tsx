@@ -1,6 +1,7 @@
 import { Network, Shield, Cpu, Zap, Activity } from "lucide-react";
 
 const TechnologyOverview = () => {
+
   const features = [
     {
       icon: Shield,
@@ -28,8 +29,8 @@ const TechnologyOverview = () => {
     <section id="technology" className="py-24 relative overflow-hidden bg-transparent">
       <div className="container mx-auto px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-        <div className="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full mb-6">
             <Cpu className="w-4 h-4 text-accent" />
             <span className="text-sm font-mono text-muted-foreground">Technology</span>
           </div>
@@ -48,7 +49,6 @@ const TechnologyOverview = () => {
             <div
               key={index}
               className="glass-card p-8 rounded-2xl glow-primary hover:scale-105 transition-all duration-300 group"
-              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
@@ -99,3 +99,4 @@ const TechnologyOverview = () => {
 };
 
 export default TechnologyOverview;
+
