@@ -91,13 +91,6 @@ This project leverages a curated stack of modern frontend technologies and libra
 
 Follow these instructions to set up the project locally for development and testing.
 
-### Prerequisites
-
-Make sure you have the following installed on your machine:
-
--   Node.js (v18.0 or newer)
--   npm (v8 or newer) or yarn
-
 ### Installation
 
 1.  **Clone the GitHub Repository:**
