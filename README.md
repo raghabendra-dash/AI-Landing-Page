@@ -81,7 +81,6 @@ This project leverages a curated stack of modern frontend technologies and libra
 | **[shadcn/ui](https://ui.shadcn.com/)** | Re-usable components built using Radix UI and Tailwind CSS. |
 | **[Radix UI](https://www.radix-ui.com/)** | A set of low-level, unstyled, accessible UI primitives. |
 | **[Lucide React](https://lucide.dev/)** | A simply beautiful and consistent icon toolkit. |
-| **[React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)**| A React renderer for Three.js. |
 | **[GSAP](https://gsap.com/)** | A professional-grade JavaScript animation library for the modern web. |
 
 
